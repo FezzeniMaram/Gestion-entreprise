@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "entreprise",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "us-central1"
+      }
+    }
+  ]
+}

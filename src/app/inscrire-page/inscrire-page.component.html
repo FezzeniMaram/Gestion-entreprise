@@ -1,0 +1,19 @@
+<div class="body">
+    <form (ngSubmit)="enregistrement(enregitreForm)" #enregitreForm="ngForm">
+        <h3>Inscrire</h3>
+        <label for="Nom">Nom</label>
+        <input type="text" placeholder="Non " name="nom" [(ngModel)]="admin.nom">
+
+        <label for="telephone">Telephone</label>
+        <input type="text" placeholder="Email " name="telephone" [(ngModel)]="admin.telephone" >
+
+        <label for="Email">Email</label>
+        <input type="text" placeholder="Email " name="email" [(ngModel)]="admin.email">
+
+        <label for="Mot de passe">Mot de Passe</label>
+        <input type="password" placeholder="Mot de passe" name="motdePasse" [(ngModel)]="admin.motdePasse">
+
+        <button type="submit" class="inscrire" >Inscrire </button>
+        <p><a href="/connecte">Vous avez déjà un compte</a></p>
+    </form>
+</div>

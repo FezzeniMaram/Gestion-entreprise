@@ -1,0 +1,75 @@
+<div class="body">
+
+    <div class="body">
+  
+      <div class="header">
+        <img src="assets/leTaff.png" alt="gestion">
+        <div class="tete">
+    
+        </div>
+      </div>
+      <div class="nav">
+        <div class="menu">
+         <br> <p> <img class="icon" src="assets/home.png" alt="home"><a href="/home">Accueil</a></p>
+         <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/employer">Employer</a></p>
+         <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/stagiaire">Stagiaire</a></p>
+         <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/client">Client</a></p>
+        </div>
+      </div>
+      </div>
+    <div class="centre">
+      <div>
+        <p  style="color: grey;"> Client/Ajouter/
+         <button style="margin-left: 546px;" (click)="retour()">Retour</button></p>
+       </div>
+        <form (ngSubmit)="enregistrement(enregistreForm)" #enregistreForm="ngForm">
+          <table>
+            <tbody>
+              <tr>
+                <td style="width: 170px;"><label for="cin">CIN: </label></td>
+                <td><input type="text" id="cin" name="cin" [(ngModel)]="client.cin_client"></td>
+              </tr>
+              <tr>
+                <td><label for="nom">Nom:</label></td>
+                <td><input type="text" id="nom" name="nom" [(ngModel)]="client.nom_client"></td>
+              </tr>
+              <tr>
+                <td><label for="prenom">Prénom: </label></td>
+                <td><input type="text" id="prenom" name="prenom" [(ngModel)]="client.prenom_client"></td>
+              </tr> 
+              <tr>
+                <td><label for="adresse">Adresse: </label></td>
+                <td><input type="text" id="adresse" name="adresse" [(ngModel)]="client.adresse_client"></td>
+              </tr>
+              <tr>
+                <td><label for="email">Email: </label></td>
+                <td><input type="email" id="email" name="email" [(ngModel)]="client.email_client"></td>
+              </tr>
+              <tr>
+                <td><label for="telephone">Téléphone: </label></td>
+                <td><input type="tel" id="telephone" name="telephone" [(ngModel)]="client.tel_client" ></td>
+              </tr>
+              <tr>
+                <td><label for="statut de projet">Statut de projet: </label></td>
+                <td><select id="statut" name="statut_projet" [(ngModel)]="client.statut_projet">
+                  <option value="En attente">En attente</option>
+                  <option value="En cours">En cours </option>
+                  <option value="Terminé"> Terminé </option>
+                  <option value="Annulé"> Annulé </option>
+
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="note">note: </label></td>
+                <td><textarea name="note" [(ngModel)]="client.note" ></textarea></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><button type="submit" class="submit">Enregistrer</button></td>
+              </tr>
+  
+            </tbody>
+          </table>
+        </form></div></div>
+  
+  

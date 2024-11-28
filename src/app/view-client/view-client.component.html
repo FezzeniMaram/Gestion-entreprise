@@ -1,0 +1,55 @@
+<div class="body">
+
+    <div class="header">
+      <img src="assets/leTaff.png" class="LeTaff" alt="leTaff">
+      <div class="tete">
+  
+      </div>
+    </div>
+  
+    <div class="nav">
+      <div class="menu">
+       <br> <p> <img class="icon" src="assets/home.png" alt="home"><a href="/home">Accueil</a></p>
+       <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/employer">Employer</a></p>
+       <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/stagiaire">Stagiaire</a></p>
+       <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/client">Client</a></p>
+      </div>
+    </div>
+    </div>
+    <div class="centre">
+      <div><p  style="color: grey;"> Client/Vue/ </p>
+        <div> <img class="personne" src="assets/personne.png" alt="personne">
+        <div class="nom" *ngFor="let item of client$ | async">
+                {{item.nom_client}} {{item.prenom_client}}
+        </div>
+        </div>
+        <div class="info">
+
+            <table *ngFor="let item of client$ | async">
+                <tbody>
+                    <tr>
+                        <td class="titre">Cin:</td><td>{{ item.cin_client}}</td>
+                    </tr>
+                    <tr>
+                        <td class="titre">Adresse:</td><td>{{ item.adresse_client}}</td>
+                    </tr>
+                    <tr>
+                        <td class="titre">Email:</td><td>{{ item.email_client}}</td>
+                    </tr>
+                    <tr>
+                        <td class="titre">Telephone:</td><td>{{ item.tel_client}}</td>
+                    </tr>
+                    <tr>
+                        <td class="titre">Statut de projet:</td><td>{{ item.statut_projet}}</td>
+                    </tr>
+                    <tr>
+                        <td class="titre">Note:</td><td>{{ item.note}}</td>
+                    </tr>
+                    <td></td>
+                    <td>
+                        <button class="retour" (click)="retour()">Retour</button>
+                        <button class="modifier" (click)="modifier()">Modifier</button>
+                    </td>
+                </tbody>
+            </table>
+    </div>

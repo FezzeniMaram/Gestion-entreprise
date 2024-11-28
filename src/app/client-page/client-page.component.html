@@ -1,0 +1,45 @@
+<div class="body">
+
+    <div class="header">
+      <img src="assets/leTaff.png" alt="gestion">
+      <div class="tete">
+  
+      </div>
+    </div>
+  
+    <div class="nav">
+      <div class="menu">
+       <br> <p> <img class="icon" src="assets/home.png" alt="home"><a href="/home">Accueil</a></p>
+       <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/employer">Employer</a></p>
+       <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/stagiaire">Stagiaire</a></p>
+       <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/client">Client</a></p>
+      </div>
+    </div>
+    </div>
+    <div class="centre">
+      <div>
+       <p  style="color: grey;"> Client/
+        <button style="margin-left: 546px;" class="ajout" (click)="navto_ajout()">Ajouter</button></p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nom et Prénom</th>
+            <th>Adresse</th>
+            <th>Téléphone</th>
+           <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of client$ | async">
+            <td>{{ item.nom_client }} {{ item.prenom_client }}</td>
+            <td>{{ item.adresse_client }}</td>
+            <td>{{ item.tel_client }}</td>
+            <td><button class="view-button" (click)="getValue(item.cin_client)">view</button>
+              <button class="supp-button" (click)="onDelete(item.cin_client)" >Supprimer</button></td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    

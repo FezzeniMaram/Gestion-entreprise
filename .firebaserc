@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "contacts-b9881": {
+      "hosting": {
+        "entreprise": [
+          "contacts-b9881"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "contacts-b9881"
+  }
+}

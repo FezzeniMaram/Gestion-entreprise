@@ -1,0 +1,90 @@
+<div class="body">
+
+  <div class="body">
+
+    <div class="header">
+      <img src="assets/leTaff.png" alt="gestion">
+      <div class="tete">
+  
+      </div>
+    </div>
+    <div class="nav">
+      <div class="menu">
+       <br> <p> <img class="icon" src="assets/home.png" alt="home"><a href="/home">Accueil</a></p>
+       <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/employer">Employer</a></p>
+       <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/stagiaire">Stagiaire</a></p>
+       <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/client">Client</a></p>
+      </div>
+    </div>
+    </div>
+  <div class="centre">
+    <div>
+      <p  style="color: grey;"> Employer/Ajouter/
+       <button style="margin-left: 546px; " class="retour" (click)="retour()">Retour</button></p>
+     </div>
+      <form (ngSubmit)="enregistrement(enregistreForm)" #enregistreForm="ngForm">
+        <table>
+          <tbody>
+            <tr>
+              <td style="width: 170px;"><label for="cin">CIN: </label></td>
+              <td><input type="text" id="cin" name="cin" [(ngModel)]="employer.cin_emp"></td>
+            </tr>
+            <tr>
+              <td><label for="nom">Nom:</label></td>
+              <td><input type="text" id="nom" name="nom" [(ngModel)]="employer.nom_emp"></td>
+            </tr>
+            <tr>
+              <td><label for="prenom">Prénom: </label></td>
+              <td><input type="text" id="prenom" name="prenom" [(ngModel)]="employer.prenom_emp"></td>
+            </tr>
+            <tr>
+              <td><label for="dateNaissance">Date de naissance: </label></td>
+              <td><input type="date" id="dateNaissance" name="dateNaissance" [(ngModel)]="employer.date_naiss_emp"></td>
+            </tr>
+
+            <tr>
+              <td><label for="adresse">Adresse: </label></td>
+              <td><input type="text" id="adresse" name="adresse" [(ngModel)]="employer.adresse_emp"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email: </label></td>
+              <td><input type="email" id="email" name="email" [(ngModel)]="employer.email_emp"></td>
+            </tr>
+            <tr>
+              <td><label for="telephone">Téléphone: </label></td>
+              <td><input type="tel" id="telephone" name="telephone" [(ngModel)]="employer.tel_emp" ></td>
+            </tr>
+            <tr>
+              <td><label for="telephoneUrgence">Téléphone d'urgence: </label></td>
+              <td><input type="tel" id="telephoneUrgence" name="telephoneUrgence" [(ngModel)]="employer.tel_urg_emp" ></td>
+            </tr>
+            <tr>
+              <td><label for="departement">Département: </label></td>
+              <td><select id="departement" name="departement" [(ngModel)]="employer.departement_emp">
+                <option value="developement web">Developement web</option>
+                <option value="developement mobile">Developement mobile</option>
+                <option value="marketing degitale"> Marketing degitale</option>
+                <option value="Reseau et securite">Reseau et securite</option>
+                <option value="design graphique">Design graphique</option>
+  
+              </select></td>
+            </tr>
+            <tr>
+              <td><label for="salaire">Heures de travaille: </label></td>
+              <td><input type="text" id="heur_travaille" name="heur_travaille" [(ngModel)]="employer.heur_trava_emp" >
+              </td>
+            </tr>
+            <tr>
+              <td><label for="salaire">Salaire: </label></td>
+              <td><input type="text" id="salaire" name="salaire" [(ngModel)]="employer.salaire_emp" >
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button type="submit"  style="margin-left: 250px;" class="submit">Enregistrer</button></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </form></div></div>
+

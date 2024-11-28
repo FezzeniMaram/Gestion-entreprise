@@ -1,0 +1,107 @@
+<div class="body">
+
+    <div class="body">
+  
+      <div class="header">
+        <img src="assets/leTaff.png" alt="gestion">
+        <div class="tete">
+    
+        </div>
+      </div>
+      <div class="nav">
+        <div class="menu">
+         <br> <p> <img class="icon" src="assets/home.png" alt="home"><a href="/home">Accueil</a></p>
+         <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/employer">Employer</a></p>
+         <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/stagiaire">Stagiaire</a></p>
+         <br> <p> <img class="icon" src="assets/persone.png" alt="persone"><a href="/client">Client</a></p>
+        </div>
+      </div>
+      </div>
+    <div class="centre">
+      <div>
+        <p  style="color: grey;"> Stagiaire/Modifier/
+         <button style="margin-left: 546px;" class="retour" (click)="retour()">Retour</button></p>
+       </div>
+        <form (ngSubmit)="modifier(modifierForm)" #modifierForm="ngForm">
+          <table>
+            <tbody>
+              <tr>
+                <td  style="width: 170px;"><label for="cin">CIN: </label></td>
+                <td colspan="3" ><input type="text" id="cin" name="cin" [(ngModel)]="stagiaire.cin_stag"></td>
+              </tr>
+              <tr>
+                <td ><label for="nom">Nom:</label></td>
+                <td colspan="3"><input type="text" id="nom" name="nom" [(ngModel)]="stagiaire.nom_stag"></td>
+              </tr>
+              <tr>
+                <td ><label for="prenom">Prénom: </label></td>
+                <td colspan="3"><input type="text" id="prenom" name="prenom" [(ngModel)]="stagiaire.prenom_stag"></td>
+              </tr>
+              <tr>
+                <td><label for="dateNaissance">Date de naissance: </label></td>
+                <td colspan="3"><input type="date" id="dateNaissance" name="dateNaissance" [(ngModel)]="stagiaire.date_naiss_stag"></td>
+              </tr>
+  
+              <tr>
+                <td><label for="adresse">Adresse: </label></td>
+                <td colspan="3"><input type="text" id="adresse" name="adresse" [(ngModel)]="stagiaire.adresse_stag"></td>
+              </tr>
+              <tr>
+                <td><label for="email">Email: </label></td>
+                <td colspan="3"><input type="email" id="email" name="email" [(ngModel)]="stagiaire.email_stag"></td>
+              </tr>
+              <tr>
+                <td><label for="telephone">Téléphone: </label></td>
+                <td colspan="3"><input type="tel" id="telephone" name="telephone" [(ngModel)]="stagiaire.tel_stag" ></td>
+              </tr>
+              <tr>
+                <td ><label for="telephoneUrgence">Téléphone d'urgence: </label></td>
+                <td colspan="3"><input type="tel" id="telephoneUrgence" name="telephoneUrgence" [(ngModel)]="stagiaire.tel_urg_stag" ></td>
+              </tr>
+              <tr>
+                <td><label for="departement">Département: </label></td>
+                <td colspan="3"><select id="departement" name="departement" [(ngModel)]="stagiaire.departement_stag">
+                  <option value="developement web">Developement web</option>
+                  <option value="developement mobile">Developement mobile</option>
+                  <option value="marketing degitale"> Marketing degitale</option>
+                  <option value="Reseau et securite">Reseau et securite</option>
+                  <option value="design graphique">Design graphique</option>
+    
+                </select></td>
+              </tr>
+              <tr>
+                <td style="width: 120px;"><label for="debut_satge">Debut de stage:</label></td>
+                <td style="width: 60px;" >
+                    <input type="date" style="width: 200px;" name="date_debut" [(ngModel)]="stagiaire.date_debut" ></td>
+
+                <td style="width: 120px;"><label for="fin_stage"> &nbsp;&nbsp;Fin de stage:</label></td>
+                <td style="width: 60px;" >
+                    <input type="date"style="width: 200px;" name="date_fin"[(ngModel)]="stagiaire.date_fin" ></td>
+              </tr>
+              <tr>
+                <td><label for="heur_de_travaille">heur_de_travaille</label></td>
+                <td colspan="3"><input type="text" name="heur_de_trava" [(ngModel)]="stagiaire.heur_trava_stag" > </td>
+              </tr>
+              <tr>
+                <td><label for="niveau scolaire">Niveau scolaire</label></td>
+                <td colspan="3"><input type="text" name="niveau_scolaire" [(ngModel)]="stagiaire.niveau_scolaire" > </td>
+              </tr>
+              <tr>
+                <td><label for="nom universitaire">Nom universitaire</label></td>
+                <td colspan="3"><input type="text" name="nom_univer" [(ngModel)]="stagiaire.nom_univer" > </td>
+              </tr>
+              <tr>
+                <td ><label for="salaire">Salaire: </label></td>
+                <td colspan="3"><input type="text" id="salaire" name="salaire" [(ngModel)]="stagiaire.salaire_stag" >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td colspan="3"><button type="submit" class="submit" >Enregistrer</button></td>
+              </tr>
+  
+            </tbody>
+          </table>
+        </form></div></div>
+  
+  

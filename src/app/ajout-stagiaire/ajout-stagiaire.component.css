@@ -1,0 +1,146 @@
+.body{    
+    font-family: 'Poppins',sans-serif;
+    width: 1300px;
+    height: 1150px;
+    background-color: #F0F0F0;
+  
+  }
+  .header{
+    padding-left: 10px;
+    font-family: 'Poppins',sans-serif;
+    width: 99.2%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.13);
+  }
+  img{
+    margin-top: -40px;
+    width: 120px;
+    height: 140px;
+  }
+  .icon{
+    height: 15px;
+    width:15px ;
+  }
+  label{
+    font-weight: bold;
+  }
+  
+  table {
+    height: 500px;
+    width: 800px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #dad2d2;
+  }
+  
+  .retour {
+    margin-left: 20px;
+  margin-top: 30px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  }
+  
+  .retour:hover {
+    background-color: rgb(199, 39, 39);
+  }
+  .nav{
+    padding: 30px ;
+    width:170px;
+    height: 1030px;
+    background: -webkit-gradient(linear, left top, right top, from(#451275), to(#6b359c));
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.13);
+  }
+  
+  a { 
+    margin-top: 10px;
+    padding: 10px; 
+    text-decoration: none; 
+    color:white;
+  }
+  
+  a:hover {
+    border-radius: 10px;
+    background-color: #ccc; 
+    color: #000; 
+  }  
+  
+  .centre{
+  
+  font-family: 'Poppins',sans-serif;
+    height:100vh;
+    width: 980px;
+    margin-top: -1100px;
+    margin-left: 300px;
+  }  
+  .submit {
+  margin-left: 20px;
+  margin-top: 30px;
+  background-color: #33cc33;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  }
+  
+  .submit:hover {
+  background-color: #2e8b2e;
+  }
+    
+    .error-message {
+      color: red;
+      font-size: 14px;
+    }
+    .custom-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+  
+    
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px; 
+      border-radius: 5px;
+  
+  
+    }
+    
+  

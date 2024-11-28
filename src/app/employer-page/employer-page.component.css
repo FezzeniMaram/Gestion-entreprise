@@ -1,0 +1,126 @@
+.body{    
+    font-family: 'Poppins',sans-serif;
+    width: 1300px;
+    height: 743px;
+    background-color: #F0F0F0;
+
+  }
+  .header{
+    padding-left: 10px;
+    font-family: 'Poppins',sans-serif;
+    width: 99.2%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.13);
+  }
+  img{
+    margin-top: -40px;
+    width: 120px;
+    height: 140px;
+  }
+  .icon{
+    height: 15px;
+    width:15px ;
+  }
+
+  table {
+    width: 800px;
+    height: 200px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    height: 30px;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #dad2d2;
+  }
+  
+  .edit-button {
+    padding: 5px 10px;
+    background-color: #e64717;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #cf3a0d
+    ;
+  }
+  .nav{
+    padding: 30px ;
+    width:170px;
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, from(#451275), to(#6b359c));
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.13);
+  }
+  
+  a { 
+    margin-top: 10px;
+    padding: 10px; 
+    text-decoration: none; 
+    color:white;
+  }
+  
+  a:hover {
+    border-radius: 10px;
+    background-color: #ccc; 
+    color: #000; 
+  }  
+  
+.centre{
+
+  font-family: 'Poppins',sans-serif;
+    height:100vh;
+    width: 980px;
+    margin-top: -700px;
+    margin-left: 300px;
+}  
+.view-button {
+  margin-left: 20px;
+  margin-top: 30px;
+  background-color: blue; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.view-button:hover {
+  background-color:  rgb(26, 26, 161);
+}
+.ajout{
+  margin-left: 20px;
+  margin-top: 30px;
+  background-color: #33cc33; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.ajout:hover{
+  background-color: #2e8b2e;
+}
+.supp-button{
+  margin-left: 20px;
+  margin-top: 30px;
+  background-color: red; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.supp-button:hover {
+  background-color: rgb(199, 39, 39)}
